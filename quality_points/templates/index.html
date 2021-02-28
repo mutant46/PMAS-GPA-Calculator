@@ -22,18 +22,18 @@
     </nav>
 
 
-    <div class="container-fluid bg- p-5 mt-5 text-center">
+    <div class="container-fluid bg- p-1  text-center">
         <h1>Calculae Your GPA in just a single click</h1>
     </div>
 
-    <div class="container">
+    <div class="container ">
+        <div class="container">
+            <form class="row g-3 mb-5" action="/calculate/" method="POST"> {% csrf_token %}
+                <h4 class="mb-1">Subject No 1</h4>
+                <div class="col-md-5 col-6">
 
-        <form class="row g-3 mb-5" action="/calculate/" method="POST"> {% csrf_token %}
-            <h4 class="mb-3">Subject No 1</h4>
-            <div class="col-md-6 col-6">
-
-                <label for="inputEmail4" class="form-label">Credit Hours</label>
-                <select id="inputState" class="form-select" name="ch_1" required>
+                    <label for="inputEmail4" class="form-label">Credit Hours</label>
+                    <select id="inputState" class="form-select" name="ch_1" required>
                             <option selected disabled value="">Choose...</option>
                             <option value="1">1</option>
                             <option value="2">2</option>
@@ -41,17 +41,17 @@
                             <option value="4">4</option>
 
                           </select>
-            </div>
-            <div class="col-md-6 col-6">
-                <label for="inputPassword4" class="form-label">Obtained Numbers</label>
-                <input type="number" class="form-control" name="num_1" required>
-            </div>
-            <!-- the other subject -->
-            <h4 class="mb-3">Subject No 2</h4>
-            <div class="col-md-6 col-6">
+                </div>
+                <div class="col-md-5 col-6">
+                    <label for="inputPassword4" class="form-label">Obtained Numbers</label>
+                    <input type="number" class="form-control" name="num_1" required>
+                </div>
+                <!-- the other subject -->
+                <h4 class="mb-1">Subject No 2</h4>
+                <div class="col-md-5 col-6">
 
-                <label for="inputEmail4" class="form-label">Credit Hours</label>
-                <select id="inputState" class="form-select" name="ch_2" required>
+                    <label for="inputEmail4" class="form-label">Credit Hours</label>
+                    <select id="inputState" class="form-select" name="ch_2" required>
                                 <option selected disabled value="">Choose...</option>
                                 <option value="1">1</option>
                                 <option value="2">2</option>
@@ -59,17 +59,17 @@
                                 <option value="4">4</option>
 
                           </select>
-            </div>
-            <div class="col-md-6 col-6">
-                <label for="inputPassword4" class="form-label">Obtained Numbers</label>
-                <input type="number" class="form-control" name="num_2" required>
-            </div>
-            <!-- the other subject -->
-            <h4 class="mt-1 mb-1">Subject No 3</h4>
-            <div class="col-md-6 col-6">
+                </div>
+                <div class="col-md-5 col-6">
+                    <label for="inputPassword4" class="form-label">Obtained Numbers</label>
+                    <input type="number" class="form-control" name="num_2" required>
+                </div>
+                <!-- the other subject -->
+                <h4 class=" mb-1">Subject No 3</h4>
+                <div class="col-md-5 col-6">
 
-                <label for="inputEmail4" class="form-label">Credit Hours</label>
-                <select id="inputState" class="form-select" name="ch_3" required>
+                    <label for="inputEmail4" class="form-label">Credit Hours</label>
+                    <select id="inputState" class="form-select" name="ch_3" required>
                                 <option selected disabled value="">Choose...</option>
                                 <option value="1">1</option>
                                 <option value="2">2</option>
@@ -77,17 +77,17 @@
                                 <option value="4">4</option>
 
                           </select>
-            </div>
-            <div class="col-md-6 col-6">
-                <label for="inputPassword4" class="form-label">Obtained Numbers</label>
-                <input type="number" class="form-control" name="num_3" required>
-            </div>
-            <!-- the other subject -->
-            <h4 class="mb-3">Subject No 4</h4>
-            <div class="col-md-6 col-6">
+                </div>
+                <div class="col-md-5 col-6">
+                    <label for="inputPassword4" class="form-label">Obtained Numbers</label>
+                    <input type="number" class="form-control" name="num_3" required>
+                </div>
+                <!-- the other subject -->
+                <h4 class="mb-1">Subject No 4</h4>
+                <div class="col-md-5 col-6">
 
-                <label for="inputEmail4" class="form-label">Credit Hours</label>
-                <select id="inputState" class="form-select" name="ch_4" required>
+                    <label for="inputEmail4" class="form-label">Credit Hours</label>
+                    <select id="inputState" class="form-select" name="ch_4" required>
                                 <option selected disabled value="">Choose...</option>
                                 <option value="1">1</option>
                                 <option value="2">2</option>
@@ -95,17 +95,17 @@
                                 <option value="4">4</option>
 
                           </select>
-            </div>
-            <div class="col-md-6 col-6">
-                <label for="inputPassword4" class="form-label">Obtained Numbers</label>
-                <input type="number" class="form-control" name="num_4" required>
-            </div>
-            <!-- the other subject -->
-            <h4 class="mb-3">Subject No 5</h4>
-            <div class="col-md-6 col-6">
+                </div>
+                <div class="col-md-5 col-6">
+                    <label for="inputPassword4" class="form-label">Obtained Numbers</label>
+                    <input type="number" class="form-control" name="num_4" required>
+                </div>
+                <!-- the other subject -->
+                <h4 class="mb-1">Subject No 5</h4>
+                <div class="col-md-5 col-6">
 
-                <label for="inputEmail4" class="form-label">Credit Hours</label>
-                <select id="inputState" class="form-select" name="ch_5" required>
+                    <label for="inputEmail4" class="form-label">Credit Hours</label>
+                    <select id="inputState" class="form-select" name="ch_5" required>
                                 <option selected disabled value="">Choose...</option>
                                 <option value="1">1</option>
                                 <option value="2">2</option>
@@ -113,17 +113,17 @@
                                 <option value="4">4</option>
 
                           </select>
-            </div>
-            <div class="col-md-6 col-6">
-                <label for="inputPassword4" class="form-label">Obtained Numbers</label>
-                <input type="number" class="form-control" name="num_5" required>
-            </div>
-            <!-- the other subject -->
-            <h4 class="mb-3">Subject No 6</h4>
-            <div class="col-md-6 col-6">
+                </div>
+                <div class="col-md-5 col-6">
+                    <label for="inputPassword4" class="form-label">Obtained Numbers</label>
+                    <input type="number" class="form-control" name="num_5" required>
+                </div>
+                <!-- the other subject -->
+                <h4 class="mb-1">Subject No 6</h4>
+                <div class="col-md-5 col-6">
 
-                <label for="inputEmail4" class="form-label">Credit Hours</label>
-                <select id="inputState" class="form-select" name="ch_6" required>
+                    <label for="inputEmail4" class="form-label">Credit Hours</label>
+                    <select id="inputState" class="form-select" name="ch_6" required>
                                             <option selected disabled value="">Choose...</option>
                                             <option value="1">1</option>
                                             <option value="2">2</option>
@@ -131,15 +131,16 @@
                                             <option value="4">4</option>
 
                                       </select>
-            </div>
-            <div class="col-md-6 col-6">
-                <label for="inputPassword4" class="form-label">Obtained Numbers</label>
-                <input type="number" class="form-control" name="num_6" required>
-            </div>
-            <div class="col-12">
-                <button type="submit" class="btn btn-primary">Calculate</button>
-            </div>
-        </form>
+                </div>
+                <div class="col-md-5 col-6">
+                    <label for="inputPassword4" class="form-label">Obtained Numbers</label>
+                    <input type="number" class="form-control" name="num_6" required>
+                </div>
+                <div class="col-12">
+                    <button type="submit" class="btn btn-primary">Calculate</button>
+                </div>
+            </form>
+        </div>
     </div>
 
 

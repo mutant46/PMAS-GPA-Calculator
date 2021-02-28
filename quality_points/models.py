@@ -16,16 +16,9 @@ class HighestNumber(models.Model):
         return str(self.highest)
 
 
-class Number(models.Model):
-    credit_hour = models.ForeignKey(CreditHour, related_name='number', on_delete=models.CASCADE)
-    number = models.IntegerField()
-
-    def __str__(self):
-        return str(self.number)
-
-
 class Point(models.Model):
-    numbers = models.ForeignKey(Number, related_name='points', on_delete=models.CASCADE)
+    cre_hr = models.ForeignKey(CreditHour, on_delete=models.CASCADE, default=1)
+    numbers = models.IntegerField()
     points = models.FloatField()
 
     def __str__(self):
