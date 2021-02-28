@@ -1,7 +1,6 @@
 from django.shortcuts import render, redirect
 from django.http import HttpResponse
 from quality_points.models import *
-from .models import *
 
 # Create your views here.
 
@@ -27,12 +26,15 @@ def caculate(request):
         num_6 = request.POST.get('num_6')
 
 
+
+
     # for subject number 1
     highest_mark = HighestNumber.objects.get(belongs_to=ch_1)
     if int(num_1) > highest_mark.highest:
         num_1 = highest_mark.highest
     numbers_1 = Number.objects.get(credit_hour=ch_1, number=num_1)
     points_1 = Point.objects.get(numbers=numbers_1)
+
 
     # for subject number 2
     highest_mark = HighestNumber.objects.get(belongs_to=ch_2)
